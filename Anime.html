@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="CSS/anime.css">
+</head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ani<span class="text-danger">me</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular">Popular</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#list" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Anime List
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#shonen">Shonen</a></li>
+                            <li><a class="dropdown-item" href="#shojo">Shojo</a></li>
+                            <li><a class="dropdown-item" href="#seinen">Seinen</a></li>
+                            <li><a class="dropdown-item" href="#josei">Josei</a></li>
+                            <li><a class="dropdown-item" href="#kodo">Kodomomuke</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movie.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prime.html">Prime Video</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+
+    <!-- slide -->
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="home">
+            <div class="carousel-item active">
+                <img src="Image/op.jpg" class="d-block w-100 size" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="boxt">
+                        <h1>One Piece</h1>
+                        <p>One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the
+                            legendary treasure known as the One Piece and become the King of the Pirates. Alongside a
+                            crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh
+                            Tale, the hidden island containing the One Piece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/b1.jpg" class="d-block w-100 size" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="boxt">
+                        <h1>Bleach</h1>
+                        <p>High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul reaper
+                            powers from Rukia Kuchiki and sets out to save the world from "Hollows". High school student
+                            Kurosaki Ichigo is unlike any ordinary kid. Why? Because he can see ghosts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/aot2.jpg" class="d-block w-100 size" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="boxt">
+                        <h1>Attack on Titan</h1>
+                        <p>Eren Yeager is determined to help save humanity when titans re-appear and being to feast on
+                            human flesh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/n2.jpg" class="d-block w-100 size" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="boxt">
+                        <h1>Naruto</h1>
+                        <p>About of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of
+                            becoming the Hokage, the leader of his village. The story is told in two parts- the first
+                            set in Naruto's pre-teen years, and the second in his teens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/ds.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="boxt">
+                        <h1>Demon Slayer</h1>
+                        <p>Tanjiro Kamado is a kind-hearted and intelligent boy who lives with his family in the
+                            mountains. He became his family's breadwinner after his father's death, making trips to the
+                            nearby village to sell charcoal. Everything changed when he came home one day to discover
+                            that his family was attacked and slaughtered by a demon. Tanjiro and his sister Nezuko were
+                            the sole survivors of the incident, with Nezuko being transformed into a demon, but still
+                            surprisingly showing signs of human emotion and thought. After an encounter with Giyū
+                            Tomioka, the Water Hashira of the Demon Slayer Corps, Tanjiro is recruited by Giyū and sent
+                            to his retired master Sakonji Urokodaki for training to also become a demon slayer,
+                            beginning his quest to help his sister turn into human again and avenge the death of his
+                            family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slide -->
+
+    <!-- popular -->
+    <div class="container-fluid mt-4" id="popular">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+                <h2 class="text">Popular</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/onepiece.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">One Piece</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/ds1.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Demon Slayer</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/aot1.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Attack on Titan</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/bleach.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bleach</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/jjk.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jujutsu Kaisen</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/tomo.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tomo-chan is a Girl</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/mha.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">My Hero Academia</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/blackclover.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Black Clover</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/sf.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Spy x Family</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/opm.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">One-punch Man</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/drs1.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dr.stone</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/haikyuu.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Haikyu</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- popular -->
+
+    <!-- anime list -->
+    <!-- shonen -->
+    <div class="container-fluid mt-4" id="shonen">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+                <h2 class="text">Anime List</h2><br>
+                <h5 class="text">Shonen</h5>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/deathnote.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Death Note</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Hunter-x-Hunter.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hunter X Hunter</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/dragonb.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dragon Ball</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/onepiece.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">One Piece</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/aot1.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Attack on Titan</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/naruto.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Naruto</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/jjk.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jujutsu Kaisen</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/ds.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Demon Slayer</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- shonen -->
+    <!-- shojo -->
+    <div class="container-fluid mt-4" id="shojo">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+
+                <h5 class="text">Shojo</h5>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/fruitbasket.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fruits Basket</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/book.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Natsume's Book Of Friends</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/banana.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Banana Fish</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/nana.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nana</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/The Rose Of Versailles.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">The Rose Of Versailles</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Revolutionary Girl Utena.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Revolutionary Girl Utena</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Ouran High School Host Club.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ouran High School Host Club</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Kamisama Kiss.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kamisama Kiss</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- shojo -->
+    <!-- seinen -->
+    <div class="container-fluid mt-4" id="seinen">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+
+                <h5 class="text">Seinen</h5>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Code Geass.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Code Geass</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/BTOOOM.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BTOOOM</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Basilisk1.jpeg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Basilisk</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Guilty Crown.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Guilty Crown</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Chobits1.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chobits</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Berserk.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Berserk</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Vinland Saga.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vinland Saga</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Hellsing1.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hellsing</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- seinen -->
+    <!-- Josei -->
+    <div class="container-fluid mt-4" id="josei">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+
+                <h5 class="text">Josei</h5>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Princess Jellyfish.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Princess Jellyfish</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Bunny Drop.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bunny Drop</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Ristorante Paradiso1.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ristorante Paradiso</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Honey & Clover.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Honey & Clover</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Michiko & Hatchin.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Michiko & Hatchin</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Nodame Cantabile.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nodame Cantabile</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Gokusen.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gokusen</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Paradise Kiss.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Paradise Kiss</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- Josei -->
+    <!-- Kodomomuke -->
+    <div class="container-fluid mt-4" id="kodo">
+        <div class="row">
+            <div class="col-md-8 m-auto text-center">
+
+                <h5 class="text">Kodomomuke</h5>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Anpanman.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Anpanman</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Astro Boy.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Astro Boy</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Bomberman Jetters.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bomberman Jetters</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Image/Chimpui.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chinpui</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Demashita! Powerpuff Girls Z.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Demashita! Powerpuff Girls Z</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Doraemon.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Doraemon</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <img src="Image/Hamtaro.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hamtaro</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+            <!-- col -->
+            <div class="col-md-3 mt-4 mb-4">
+                <div class="card">
+                    <img src="Image/Kirby of the Stars.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kirby of the Stars</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    <!-- Kodomomuke -->
+    <!-- anime list -->
+    <!-- footer -->
+    <footer style="text-align: right;">Developed by Ryu.</footer>
+    <!-- footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
